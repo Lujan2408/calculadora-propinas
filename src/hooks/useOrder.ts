@@ -5,7 +5,11 @@ export default function useOrder() {
   
     const [order, setOrder] = useState<OrderItem[]>([])
 
-    return {
+    const addItem = () => {
+        console.log('Agregando ...')
+    }
 
+    return {
+        addItem
   }
 }
