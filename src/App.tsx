@@ -24,7 +24,7 @@ function App() {
         </div>
 
         <div>
-          <h2>Consumo</h2>
+          <h2 className=" font-medium">Consumo</h2>
         </div>
       </main>
     </>
