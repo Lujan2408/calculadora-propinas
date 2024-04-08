@@ -19,11 +19,15 @@ export default function useOrder() {
             const newItem : OrderItem = {...item, quantity: 1} //Toma una copia de lo que hay en el item, luego le asiganmos la nueva cantidad
             setOrder([...order, newItem])
         }
-       
+    }
+
+    const removeItem = (id : MenuItem['id']) => {
+        setOrder(order.filter(item => item.id != id))
     }
 
     return {
         order,
-        addItem
+        addItem,
+        removeItem
   }
 }
