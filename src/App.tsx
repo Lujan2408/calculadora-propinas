@@ -17,7 +17,7 @@ function App() {
         <div className=" p-5"> 
           <h2 className=" text-4xl font-black">Menú</h2>
 
-          <div className=" space-y-3 mt-10 ">
+          <div className=" space-y-3 mt-10">
               {menuItems.map((item) => (
                 <MenuItem 
                   item={item}
